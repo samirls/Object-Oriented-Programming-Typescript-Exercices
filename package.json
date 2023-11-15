@@ -4,7 +4,7 @@
   "description": "Projeto da ADA backend",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc && node server.js"
+    "dev": "tsc server.ts && node server.js"
   },
   "license": "MIT",
   "devDependencies": {

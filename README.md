@@ -34,25 +34,25 @@ no arquivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
 
 <p>Interfaces e Implementação:</p>
 <ul>
-  <li>Crie uma interface FormaGeometrica com métodos como calcularArea e calcularPerimetro.</li>
-  <li>Implemente a interface em classes como Quadrado e Círculo.</li>
-  <li>Instancie objetos dessas classes e chame seus métodos.</li>
+  <li>Crie uma interface FormaGeometrica com métodos como calcularArea e calcularPerimetro.<span>&#10003;</span></li>
+  <li>Implemente a interface em classes como Quadrado e Círculo.<span>&#10003;</span></li>
+  <li>Instancie objetos dessas classes e chame seus métodos.<span>&#10003;</span></li>
 </ul>
 
 <p>Composição de Objetos:</p>
 <ul>
-  <li>Crie uma classe Motor com métodos como ligar e desligar.</li>
-  <li>Em seguida, crie uma classe Carro que possui uma instância de Motor.</li>
-  <li>Implemente métodos em Carro que delegam chamadas aos métodos correspondentes em Motor.</li>
-  <li>Teste a funcionalidade ligando e desligando o carro.</li>
+  <li>Crie uma classe Motor com métodos como ligar e desligar.<span>&#10003;</span></li>
+  <li>Em seguida, crie uma classe Carro que possui uma instância de Motor.<span>&#10003;</span></li>
+  <li>Implemente métodos em Carro que delegam chamadas aos métodos correspondentes em Motor.<span>&#10003;</span></li>
+  <li>Teste a funcionalidade ligando e desligando o carro.<span>&#10003;</span></li>
 </ul>
 
 <p>Tratamento de Exceções:</p>
 <ul>
-  <li>Crie uma classe ContaBancaria com propriedades como saldo e métodos como sacar e depositar.</li>
-  <li>Implemente uma verificação para garantir que o saldo não fique negativo após um saque.</li>
-  <li>Utilize exceções para lidar com situações em que o saque não pode ser realizado devido a saldo insuficiente.</li>
-  <li>Teste a classe com casos que resultem em exceções.</li>
+  <li>Crie uma classe ContaBancaria com propriedades como saldo e métodos como sacar e depositar.<span>&#10003;</span></li>
+  <li>Implemente uma verificação para garantir que o saldo não fique negativo após um saque.<span>&#10003;</span></li>
+  <li>Utilize exceções para lidar com situações em que o saque não pode ser realizado devido a saldo insuficiente.<span>&#10003;</span></li>
+  <li>Teste a classe com casos que resultem em exceções.<span>&#10003;</span></li>
 </ul>
 
 <p>Padrões de Projeto: Singleton:</p>
