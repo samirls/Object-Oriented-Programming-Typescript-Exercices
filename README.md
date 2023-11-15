@@ -1,20 +1,23 @@
-Preparação:
+<h3>Preparação:</h3>
 
-Estou utilizando o script "dev": "tsc && node server.js" no package.json para compilar o arquivo TS 
-e executar automaticamente em seguida o arquivo JS.
+<p>Estou utilizando o script "dev": "tsc && node server.js" no package.json para compilar o arquivo TS 
+e executar automaticamente em seguida o arquivo JS.</p>
 
-Alternativa: instalar o pacote tsx(link abaixo). Lá tem várias opções explicadas, como dar watch
-no artuivo da seguinte forma: "dev": "tsx watch src/server.ts"
+<p>Alternativa: instalar o pacote tsx(link abaixo). Lá tem várias opções explicadas, como dar watch
+no artuivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
 
-https://www.npmjs.com/package/tsx
+<a href="https://www.npmjs.com/package/tsx">TSX package</a>
+
+
 
 <hr/>
 
-Criação de Classe e Instância:
-• Crie uma classe Carro com propriedades como modelo, ano e cor.
-• Instancie dois objetos dessa classe com diferentes valores.
-• Imprima no console os detalhes de cada carro.
-
+<p>Criação de Classe e Instância:</p>
+<ul>
+  <li>Crie uma classe Carro com propriedades como modelo, ano e cor.</li>
+  <li>Instancie dois objetos dessa classe com diferentes valores.</li>
+  <li>Imprima no console os detalhes de cada carro.</li>
+</ul>
 Herança e Polimorfismo:
 • Crie uma classe base chamada Animal com métodos como emitirSom e mover.
 • Derive duas classes, Cachorro e Pássaro, que herdam da classe Animal.
