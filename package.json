@@ -1,0 +1,13 @@
+{
+  "name": "poo-project",
+  "version": "1.0.0",
+  "description": "Projeto da ADA backend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && node server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
