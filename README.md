@@ -4,36 +4,40 @@
 e executar automaticamente em seguida o arquivo JS.</p>
 
 <p>Alternativa: instalar o pacote tsx(link abaixo). Lá tem várias opções explicadas, como dar watch
-no artuivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
+no arquivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
 
 <a href="https://www.npmjs.com/package/tsx">TSX package</a>
-
-
 
 <hr/>
 
 <p>Criação de Classe e Instância:</p>
 <ul>
-  <li>Crie uma classe Carro com propriedades como modelo, ano e cor.</li>
-  <li>Instancie dois objetos dessa classe com diferentes valores.</li>
-  <li>Imprima no console os detalhes de cada carro.</li>
+  <li>Crie uma classe Carro com propriedades como modelo, ano e cor.</li><span>&#10003;</span>
+  <li>Instancie dois objetos dessa classe com diferentes valores.</li><span>&#10003;</span>
+  <li>Imprima no console os detalhes de cada carro.</li><span>&#10003;</span>
 </ul>
-Herança e Polimorfismo:
-• Crie uma classe base chamada Animal com métodos como emitirSom e mover.
-• Derive duas classes, Cachorro e Pássaro, que herdam da classe Animal.
-• Sobrescreva o método emitirSom em ambas as classes derivadas.
-• Crie instâncias de Cachorro e Pássaro e chame seus métodos.
 
-Encapsulamento e Métodos Estáticos:
-• Crie uma classe Calculadora com métodos de operações matemáticas (soma, subtração,
-multiplicação, divisão).
-• Encapsule as operações matemáticas, permitindo apenas o acesso através dos métodos da
-classe.
-• Adicione um método estático que retorna o valor absoluto de um número.
-Interfaces e Implementação:
-• Crie uma interface FormaGeometrica com métodos como calcularArea e calcularPerimetro.
-• Implemente a interface em classes como Quadrado e Círculo.
-• Instancie objetos dessas classes e chame seus métodos.
+<p>Herança e Polimorfismo:</p>
+<ul>
+  <li>Crie uma classe base chamada Animal com métodos como emitirSom e mover.</li>
+  <li>Derive duas classes, Cachorro e Pássaro, que herdam da classe Animal.</li>
+  <li>Sobrescreva o método emitirSom em ambas as classes derivadas.</li>
+  <li>Crie instâncias de Cachorro e Pássaro e chame seus métodos.</li>
+</ul>
+
+<p>Encapsulamento e Métodos Estáticos:</p>
+<ul>
+  <li>Crie uma classe Calculadora com métodos de operações matemáticas (soma, subtração, multiplicação, divisão).</li>
+  <li>Encapsule as operações matemáticas, permitindo apenas o acesso através dos métodos da classe.</li>
+  <li>Adicione um método estático que retorna o valor absoluto de um número.</li>
+</ul>
+
+<p>Interfaces e Implementação:</p>
+<ul>
+  <li>Crie uma interface FormaGeometrica com métodos como calcularArea e calcularPerimetro.</li>
+  <li>Implemente a interface em classes como Quadrado e Círculo.</li>
+  <li>Instancie objetos dessas classes e chame seus métodos.</li>
+</ul>
 
 Composição de Objetos:
 • Crie uma classe Motor com métodos como ligar e desligar.
