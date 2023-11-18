@@ -1,19 +1,20 @@
 <h3>Menu do aplicativo:</h3>
 
-################################################################
-########## Sistema Biblioteca completa da ADA / Ifood ##########
-################################################################
-Made by samirls: https://github.com/samirls
-Escolha uma opção:
-1 - Ver os livros disponíveis
-2 - Adicionar livro à biblioteca
-3 - Remover livro da biblioteca
-4 - Emprestar livro
-5 - Devolver livro
-6 - Adicionar usuário à biblioteca
-7 - Remover usuário da biblioteca
-8 - Listar livros emprestados
-Pressione qualquer outra tecla pra sair da aplicação.
+<p>################################################################</p>
+<p>########## Sistema Biblioteca completa da ADA / Ifood ##########</p>
+<p>################################################################</p>
+<p>Made by samirls: https://github.com/samirls</p>
+
+<p>Escolha uma opção:</p>
+<p>1 - Ver os livros disponíveis</p>
+<p>2 - Adicionar livro à biblioteca</p>
+<p>3 - Remover livro da biblioteca</p>
+<p>4 - Emprestar livro</p>
+<p>5 - Devolver livro</p>
+<p>6 - Adicionar usuário à biblioteca</p>
+<p>7 - Remover usuário da biblioteca</p>
+<p>8 - Listar livros emprestados</p>
+<p>Pressione qualquer outra tecla pra sair da aplicação.</p>
 
 <h3>Preparação:</h3>
 
