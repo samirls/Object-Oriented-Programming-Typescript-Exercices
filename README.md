@@ -1,3 +1,20 @@
+<h3>Menu do aplicativo:</h3>
+
+################################################################
+########## Sistema Biblioteca completa da ADA / Ifood ##########
+################################################################
+Made by samirls: https://github.com/samirls
+Escolha uma opção:
+1 - Ver os livros disponíveis
+2 - Adicionar livro à biblioteca
+3 - Remover livro da biblioteca
+4 - Emprestar livro
+5 - Devolver livro
+6 - Adicionar usuário à biblioteca
+7 - Remover usuário da biblioteca
+8 - Listar livros emprestados
+Pressione qualquer outra tecla pra sair da aplicação.
+
 <h3>Preparação:</h3>
 
 <p>Estou utilizando o script "dev": "tsc && node server.js" no package.json para compilar o arquivo TS 

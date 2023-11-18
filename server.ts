@@ -9,12 +9,12 @@ class Livro {
     public genero: string
   ) {}
 
-  emprestar(): void {
-    console.log(`Livro "${this.titulo}" emprestado.`);
+  emprestar(usuario: Usuario): void {
+    console.log(`Livro "${this.titulo}" emprestado para ${usuario.nome}.`);
   }
 
-  devolver(): void {
-    console.log(`Livro "${this.titulo}" devolvido.`);
+  devolver(usuario: Usuario): void {
+    console.log(`Livro "${this.titulo}" devolvido por ${usuario.nome}.`);
   }
 }
 
@@ -51,14 +51,14 @@ class Usuario {
 
   emprestarLivro(livro: Livro): void {
     this.livrosEmprestados.push(livro);
-    livro.emprestar();
+    livro.emprestar(this);
   }
 
   devolverLivro(livro: Livro): void {
     const index = this.livrosEmprestados.indexOf(livro);
     if (index !== -1) {
       this.livrosEmprestados.splice(index, 1);
-      livro.devolver();
+      livro.devolver(this);
     }
   }
 }
@@ -310,12 +310,18 @@ function listarLivrosEmprestados(biblioteca: Biblioteca): void {
     console.log('Nenhum livro emprestado no momento.');
   } else {
     livrosEmprestados.forEach((livro) => {
-      console.log(colors.cyan('----------------------------------------'));
-      console.log(colors.bold(`Título: ${livro.titulo}`));
-      console.log(`Autor: ${livro.autor.nome}`);
-      console.log(`Ano de Publicação: ${livro.anoPublicacao}`);
-      console.log(`Gênero: ${livro.genero}`);
-      console.log(colors.cyan('----------------------------------------'));
+      const usuario = biblioteca.usuarios.find((user) =>
+        user.livrosEmprestados.includes(livro)
+      );
+      if (usuario) {
+        console.log(colors.cyan('----------------------------------------'));
+        console.log(colors.bold(`Título: ${livro.titulo}`));
+        console.log(`Autor: ${livro.autor.nome}`);
+        console.log(`Ano de Publicação: ${livro.anoPublicacao}`);
+        console.log(`Gênero: ${livro.genero}`);
+        console.log(`Usuário que pegou emprestado: ${usuario.nome}`);
+        console.log(colors.cyan('----------------------------------------'));
+      }
     });
   }
 

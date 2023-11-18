@@ -7,11 +7,11 @@ var Livro = /** @class */ (function () {
         this.anoPublicacao = anoPublicacao;
         this.genero = genero;
     }
-    Livro.prototype.emprestar = function () {
-        console.log("Livro \"".concat(this.titulo, "\" emprestado."));
+    Livro.prototype.emprestar = function (usuario) {
+        console.log("Livro \"".concat(this.titulo, "\" emprestado para ").concat(usuario.nome, "."));
     };
-    Livro.prototype.devolver = function () {
-        console.log("Livro \"".concat(this.titulo, "\" devolvido."));
+    Livro.prototype.devolver = function (usuario) {
+        console.log("Livro \"".concat(this.titulo, "\" devolvido por ").concat(usuario.nome, "."));
     };
     return Livro;
 }());
@@ -43,13 +43,13 @@ var Usuario = /** @class */ (function () {
     }
     Usuario.prototype.emprestarLivro = function (livro) {
         this.livrosEmprestados.push(livro);
-        livro.emprestar();
+        livro.emprestar(this);
     };
     Usuario.prototype.devolverLivro = function (livro) {
         var index = this.livrosEmprestados.indexOf(livro);
         if (index !== -1) {
             this.livrosEmprestados.splice(index, 1);
-            livro.devolver();
+            livro.devolver(this);
         }
     };
     return Usuario;
@@ -273,12 +273,18 @@ function listarLivrosEmprestados(biblioteca) {
     }
     else {
         livrosEmprestados.forEach(function (livro) {
-            console.log(colors.cyan('----------------------------------------'));
-            console.log(colors.bold("T\u00EDtulo: ".concat(livro.titulo)));
-            console.log("Autor: ".concat(livro.autor.nome));
-            console.log("Ano de Publica\u00E7\u00E3o: ".concat(livro.anoPublicacao));
-            console.log("G\u00EAnero: ".concat(livro.genero));
-            console.log(colors.cyan('----------------------------------------'));
+            var usuario = biblioteca.usuarios.find(function (user) {
+                return user.livrosEmprestados.includes(livro);
+            });
+            if (usuario) {
+                console.log(colors.cyan('----------------------------------------'));
+                console.log(colors.bold("T\u00EDtulo: ".concat(livro.titulo)));
+                console.log("Autor: ".concat(livro.autor.nome));
+                console.log("Ano de Publica\u00E7\u00E3o: ".concat(livro.anoPublicacao));
+                console.log("G\u00EAnero: ".concat(livro.genero));
+                console.log("Usu\u00E1rio que pegou emprestado: ".concat(usuario.nome));
+                console.log(colors.cyan('----------------------------------------'));
+            }
         });
     }
     main();
