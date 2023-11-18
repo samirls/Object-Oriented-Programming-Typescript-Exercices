@@ -8,6 +8,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "prompt-sync": "^4.2.0"
   }
 }

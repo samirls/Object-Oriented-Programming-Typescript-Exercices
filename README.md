@@ -57,9 +57,9 @@ no arquivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
 
 <p>Padrões de Projeto: Singleton:</p>
 <ul>
-  <li>Implemente uma classe ConfiguracaoApp usando o padrão Singleton, garantindo que exista apenas uma instância dessa classe.</li>
-  <li>Adicione propriedades de configuração à classe e métodos para acessá-las.</li>
-  <li>Tente criar várias instâncias da classe e verifique se todas se referem à mesma instância.</li>
+  <li>Implemente uma classe ConfiguracaoApp usando o padrão Singleton, garantindo que exista apenas uma instância dessa classe.<span>&#10003;</span></li>
+  <li>Adicione propriedades de configuração à classe e métodos para acessá-las.<span>&#10003;</span></li>
+  <li>Tente criar várias instâncias da classe e verifique se todas se referem à mesma instância.<span>&#10003;</span></li>
 </ul>
 
 <hr/>
@@ -69,32 +69,32 @@ no arquivo da seguinte forma: "dev": "tsx watch src/server.ts"</p>
 <p>Considere o desenvolvimento de um sistema de gerenciamento de biblioteca em TypeScript. Este
 sistema deve permitir a gestão de livros, autores e usuários. Os requisitos básicos são:</p>
 
-<p>Livro:</p>
+<p>Livro:<span>&#10003;</span></p>
 <ul>
   <li>Um livro possui atributos como título, autor, anoPublicacao, e genero.</li>
   <li>Implemente métodos para emprestar e devolver livros.</li>
 </ul>
 
-<p>Autor:</p>
+<p>Autor:<span>&#10003;</span></p>
 <ul>
   <li>Um autor possui atributos como nome, dataNascimento e nacionalidade.</li>
   <li>Implemente métodos para adicionar e remover livros associados ao autor.</li>
 </ul>
 
-<p>Usuário:</p>
+<p>Usuário:<span>&#10003;</span></p>
 <ul>
   <li>Um usuário possui atributos como nome, email e livrosEmprestados.</li>
   <li>Implemente métodos para emprestar e devolver livros.</li>
 </ul>
 
-<p>Biblioteca:</p>
+<p>Biblioteca:<span>&#10003;</span></p>
 <ul>
   <li>A biblioteca é responsável por manter registros de livros, autores e usuários.</li>
   <li>Implemente métodos para adicionar e remover livros, autores e usuários.</li>
   <li>Forneça métodos para buscar livros por autor, listar livros emprestados, etc.</li>
 </ul>
 
-<p>Relatórios:</p>
+<p>Relatórios:<span>&#10003;</span></p>
 <ul>
   <li>Crie um mecanismo para gerar relatórios, como listar todos os livros emprestados, livros
   disponíveis, etc.</li>
@@ -107,7 +107,7 @@ sistema deve permitir a gestão de livros, autores e usuários. Os requisitos b�
   livros associados, etc.</li>
 </ul>
 
-<p>Requisitos Técnicos:</p>
+<p>Requisitos Técnicos:<span>&#10003;</span></p>
 <ul>
   <li>Utilize classes e interfaces para modelar livros, autores e usuários.</li>
   <li>Implemente métodos construtores, getters, setters e métodos específicos para cada classe.</li>
